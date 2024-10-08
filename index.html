@@ -12,6 +12,21 @@
 						<meta name="version" content="app-v1">
 						<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+            <script>
+              // Initial count and increment factor
+              let count = 83;
+              let increment = 1;
+            
+              // Function to progressively increase the count and update the DOM
+              function incrementCount() {
+                count += increment;
+                document.getElementById('counter').textContent = count;
+                increment += 1; // Increase increment by 1 each time to make it progressively larger
+              }
+            
+              // Increment the count every 3 seconds
+              setInterval(incrementCount, 3000);
+            </script>
 						<!-- FAVICON -->
 						<link rel="icon" href="favicon.ico">
 
@@ -122,7 +137,7 @@ snaptr('track', 'PAGE_VIEW');
     font-size: 30px;
     text-align: center;
   }
-} </style><div class="headline-inner"><p><strong><em>83 people are checking out right now</em></strong></p></div></div></div><div data-v-7da0ed78="" data-v-796cd32d="" data-eid="49717" class="element-wrapper"><div data-v-7da0ed78="" class="headline el-49717" style="line-height: 1.2; color: rgb(134, 2, 60); margin: 10px 0px; padding: 5px; text-shadow: transparent 0px 0px 0px;"><style> .el-49717  {
+} </style><div class="headline-inner"><p><strong><em>  <span id="counter">83</span> people are checking out right now</em></strong></p></div></div></div><div data-v-7da0ed78="" data-v-796cd32d="" data-eid="49717" class="element-wrapper"><div data-v-7da0ed78="" class="headline el-49717" style="line-height: 1.2; color: rgb(134, 2, 60); margin: 10px 0px; padding: 5px; text-shadow: transparent 0px 0px 0px;"><style> .el-49717  {
     font-size: calc(32px + 8 * ((100vw - 320px) / 960));
     text-align: center;
 }
