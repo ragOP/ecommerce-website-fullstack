@@ -1,8 +1,8 @@
+
 {
-  "rewrites": [
-    {
-      "source": "/fmc1",
-      "destination": "/index.html"
-    }
-  ]
-}
+    "rewrites": [
+      { "source": "/fbkm1", "destination": "/index.html" }
+   
+    ]
+  }
+  
