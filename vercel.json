@@ -1,0 +1,8 @@
+{
+  "rewrites": [
+    {
+      "source": "/fmc1",
+      "destination": "/fmc1/index.html"
+    }
+  ]
+}
