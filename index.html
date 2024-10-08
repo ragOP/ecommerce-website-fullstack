@@ -13,15 +13,25 @@
 						<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
             <script>
-              // Initial count and increment factor
+              // Initial count
               let count = 83;
-              let increment = 1;
             
-              // Function to progressively increase the count and update the DOM
+              // Increment values for the first steps
+              const initialIncrements = [12, 15]; // 83 + 12 = 95, then 95 + 15 = 110
+              let incrementIndex = 0;
+            
+              // Normal increment after reaching 110
+              const normalIncrement = 5;
+            
+              // Function to increment the count based on the step
               function incrementCount() {
-                count += increment;
+                if (incrementIndex < initialIncrements.length) {
+                  count += initialIncrements[incrementIndex];
+                  incrementIndex++;
+                } else {
+                  count += normalIncrement;
+                }
                 document.getElementById('counter').textContent = count;
-                increment += 1; // Increase increment by 1 each time to make it progressively larger
               }
             
               // Increment the count every 3 seconds
